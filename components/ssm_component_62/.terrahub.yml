@@ -1,37 +1,31 @@
 component:
-  name: snsm_component_62
+  name: component_62
   template:
     resource:
       aws_ssm_parameter:
-        snsm_component_62:
-          name: var.snsm_component_62_name
-          type: var.snsm_component_62_type
-          value: var.snsm_component_62_value
+        component_62:
+          name: var.component_62_name
+          type: var.component_62_type
+          value: var.component_62_value
     variable:
-      snsm_component_62_name:
+      component_62_name:
         type: string
-      snsm_component_62_type:
+      component_62_type:
         type: string
-      snsm_component_62_value:
+      component_62_value:
         type: string
     output:
       id:
-        value: aws_ssm_parameter.snsm_component_62.id
+        value: aws_ssm_parameter.component_62.id
       thub_id:
-        value: aws_ssm_parameter.snsm_component_62.id
+        value: aws_ssm_parameter.component_62.id
       key_id:
-        value: aws_ssm_parameter.snsm_component_62.key_id
+        value: aws_ssm_parameter.component_62.key_id
       version:
-        value: aws_ssm_parameter.snsm_component_62.version
+        value: aws_ssm_parameter.component_62.version
       arn:
-        value: aws_ssm_parameter.snsm_component_62.arn
+        value: aws_ssm_parameter.component_62.arn
     tfvars:
-      snsm_component_62_name: snsm_component_62
-      snsm_component_62_type: String
-      snsm_component_62_value: snsm_component_62
-    terraform:
-      backend:
-        s3:
-          key: terraform/cloud_deployer_demo/snsm_component_62/terraform.tfstate
-          bucket: data-lake-terrahub-us-east-1
-          region: us-east-1
+      component_62_name: component_62
+      component_62_type: String
+      component_62_value: component_62

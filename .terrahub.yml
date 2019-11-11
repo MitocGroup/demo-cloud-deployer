@@ -6,8 +6,8 @@ terraform:
   varFile:
     - default.tfvars
   version: 0.12.13
-  cloudAccount: terrahub
-  backendAccount: terrahub
+  cloudAccount: default
+  backendAccount: default
 template:
   provider:
     aws:

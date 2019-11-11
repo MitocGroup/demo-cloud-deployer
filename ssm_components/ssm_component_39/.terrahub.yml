@@ -1,0 +1,37 @@
+component:
+  name: snsm_component_39
+  template:
+    resource:
+      aws_ssm_parameter:
+        snsm_component_39:
+          name: var.snsm_component_39_name
+          type: var.snsm_component_39_type
+          value: var.snsm_component_39_value
+    variable:
+      snsm_component_39_name:
+        type: string
+      snsm_component_39_type:
+        type: string
+      snsm_component_39_value:
+        type: string
+    output:
+      id:
+        value: aws_ssm_parameter.snsm_component_39.id
+      thub_id:
+        value: aws_ssm_parameter.snsm_component_39.id
+      key_id:
+        value: aws_ssm_parameter.snsm_component_39.key_id
+      version:
+        value: aws_ssm_parameter.snsm_component_39.version
+      arn:
+        value: aws_ssm_parameter.snsm_component_39.arn
+    tfvars:
+      snsm_component_39_name: snsm_component_39
+      snsm_component_39_type: String
+      snsm_component_39_value: snsm_component_39
+    terraform:
+      backend:
+        s3:
+          key: terraform/cloud_deployer_demo/snsm_component_39/terraform.tfstate
+          bucket: data-lake-terrahub-us-east-1
+          region: us-east-1

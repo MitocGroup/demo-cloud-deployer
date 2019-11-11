@@ -1,17 +1,16 @@
 project:
-  name: cloud-deployer-demo
+  name: demo-cloud-deployer
   code: 12Yd66g
   distributor: lambda
 terraform:
   varFile:
     - default.tfvars
-  version: '0.12.9'
+  version: 0.12.13
   cloudAccount: terrahub
   backendAccount: terrahub
-
 template:
   provider:
     aws:
       region: us-east-1
       allowed_account_ids:
-        - 600605919324
+        - 123456789012

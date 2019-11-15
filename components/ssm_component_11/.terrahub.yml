@@ -4,9 +4,9 @@ component:
     resource:
       aws_ssm_parameter:
         component_11:
-          name: var.component_11_name
-          type: var.component_11_type
-          value: var.component_11_value
+          name: ${var.component_11_name}
+          type: ${var.component_11_type}
+          value: ${var.component_11_value}
     variable:
       component_11_name:
         type: string
@@ -16,15 +16,15 @@ component:
         type: string
     output:
       id:
-        value: aws_ssm_parameter.component_11.id
+        value: ${aws_ssm_parameter.component_11.id}
       thub_id:
-        value: aws_ssm_parameter.component_11.id
+        value: ${aws_ssm_parameter.component_11.id}
       key_id:
-        value: aws_ssm_parameter.component_11.key_id
+        value: ${aws_ssm_parameter.component_11.key_id}
       version:
-        value: aws_ssm_parameter.component_11.version
+        value: ${aws_ssm_parameter.component_11.version}
       arn:
-        value: aws_ssm_parameter.component_11.arn
+        value: ${aws_ssm_parameter.component_11.arn}
     tfvars:
       component_11_name: component_11
       component_11_type: String

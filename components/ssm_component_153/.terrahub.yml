@@ -1,0 +1,31 @@
+component:
+  name: component_153
+  template:
+    resource:
+      aws_ssm_parameter:
+        component_153:
+          name: ${var.component_153_name}
+          type: ${var.component_153_type}
+          value: ${var.component_153_value}
+    variable:
+      component_153_name:
+        type: string
+      component_153_type:
+        type: string
+      component_153_value:
+        type: string
+    output:
+      id:
+        value: ${aws_ssm_parameter.component_153.id}
+      thub_id:
+        value: ${aws_ssm_parameter.component_153.id}
+      key_id:
+        value: ${aws_ssm_parameter.component_153.key_id}
+      version:
+        value: ${aws_ssm_parameter.component_153.version}
+      arn:
+        value: ${aws_ssm_parameter.component_153.arn}
+    tfvars:
+      component_153_name: component_153
+      component_153_type: String
+      component_153_value: component_153

@@ -1,0 +1,31 @@
+component:
+  name: component_159
+  template:
+    resource:
+      aws_ssm_parameter:
+        component_159:
+          name: ${var.component_159_name}
+          type: ${var.component_159_type}
+          value: ${var.component_159_value}
+    variable:
+      component_159_name:
+        type: string
+      component_159_type:
+        type: string
+      component_159_value:
+        type: string
+    output:
+      id:
+        value: ${aws_ssm_parameter.component_159.id}
+      thub_id:
+        value: ${aws_ssm_parameter.component_159.id}
+      key_id:
+        value: ${aws_ssm_parameter.component_159.key_id}
+      version:
+        value: ${aws_ssm_parameter.component_159.version}
+      arn:
+        value: ${aws_ssm_parameter.component_159.arn}
+    tfvars:
+      component_159_name: component_159
+      component_159_type: String
+      component_159_value: component_159
